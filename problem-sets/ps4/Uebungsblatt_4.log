@@ -1,0 +1,346 @@
+{"type":["init_ps"],"time":["2025-04-24 18:10:44"],"user":["Hannes Vohrer"],"umph":[1745511044.1293],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:10:44"],"user":["Hannes Vohrer"],"umph":[1745511044.185],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(stargazer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:10:44"],"user":["Hannes Vohrer"],"umph":[1745511044.3219],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[1],"code":["EU_Makro <- read_csv(\"data/EU_Makro.csv\")\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_makro in chunk 1_a."]}
+,
+{"type":["init_ps"],"time":["2025-04-24 18:11:29"],"user":["Hannes Vohrer"],"umph":[1745511089.852],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:11:29"],"user":["Hannes Vohrer"],"umph":[1745511089.8977],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(stargazer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:11:30"],"user":["Hannes Vohrer"],"umph":[1745511090.1836],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["eu_makro <- read_csv(\"data/EU_Makro.csv\")\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:11:30"],"user":["Hannes Vohrer"],"umph":[1745511090.646],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["eu_makro <- eu_makro |>\n  mutate( debt_share_country_pro = debt_share_country * 100)\n  \ng1 <- eu_makro |>\n  ggplot(aes(x = debt_share_country_pro, y = unempl)) + geom_point() + \n  xlab(\"Verschuldungsquote in %\") +\n  ylab(\"Arbeitslosenquote in %\")\ng1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:11:30"],"user":["Hannes Vohrer"],"umph":[1745511090.6677],"ok":[false],"chunk":[4],"ex":[1],"e.ind":[1],"code":["reg1 <- lm(.PH_._~debt_share_country_pro, data=.PH_._)\nsummary(.PH_._)\n\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 1_b."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:13:27"],"user":["Hannes Vohrer"],"umph":[1745511207.3358],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:13:27"],"user":["Hannes Vohrer"],"umph":[1745511207.3595],"ok":[false],"chunk":[4],"ex":[1],"e.ind":[1],"code":["reg1 <- lm(.PH_._~debt_share_country_pro, data=.PH_._)\nsummary(.PH_._)\n\n# enter your code here ...\nreg1 <- lm(unempl~debt_share_country_pro, data=eu_makro)\n\n# enter your code here ...\nsummary(reg1)\n"],"message":["\nYou have assigned 2 times a value to the variable reg1 in your chunk. While you might get the correct result in RStudio, RTutor can only check your result if you assign a value to reg1 only once in your chunk."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:14:07"],"user":["Hannes Vohrer"],"umph":[1745511247.8917],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:14:07"],"user":["Hannes Vohrer"],"umph":[1745511247.9252],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["# enter your code here ...\nreg1 <- lm(unempl~debt_share_country_pro, data=eu_makro)\n\n# enter your code here ...\nsummary(reg1)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:14:07"],"user":["Hannes Vohrer"],"umph":[1745511247.9395],"ok":[false],"chunk":[5],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_c."]}
+,
+{"type":["hint"],"time":["2025-04-24 18:15:35"],"user":["Hannes Vohrer"],"umph":[1745511335.1579],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:18:22"],"user":["Hannes Vohrer"],"umph":[1745511502.8874],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:18:22"],"user":["Hannes Vohrer"],"umph":[1745511502.9095],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n6.411"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:18:22"],"user":["Hannes Vohrer"],"umph":[1745511502.926],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_d."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:21:13"],"user":["Hannes Vohrer"],"umph":[1745511673.0817],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:21:13"],"user":["Hannes Vohrer"],"umph":[1745511673.1076],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncoef(reg1)\n\n# enter your code here ...\nb0 <- coef(reg1)[1]\nb1 <- coef(reg1)[2]\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:21:13"],"user":["Hannes Vohrer"],"umph":[1745511673.1207],"ok":[false],"chunk":[7],"ex":[1],"e.ind":[0],"code":["g2 <- g1 + geom_abline(intercept=.PH_._,slope=.PH_._,colour=\".PH_._\")\n\n# enter your code here ...\n\ng2"],"message":["evaluation error in \n  g2 <- g1 + geom_abline(intercept = ___, slope = ___, colour = \"___\")\n  Error:  Objekt '___' nicht gefunden\n"]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:21:52"],"user":["Hannes Vohrer"],"umph":[1745511712.8515],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:21:53"],"user":["Hannes Vohrer"],"umph":[1745511713.0539],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["g2 <- g1 + geom_abline(intercept=b0,slope=b1,colour=\"blue\")\n\n# enter your code here ...\n\ng2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:21:53"],"user":["Hannes Vohrer"],"umph":[1745511713.0692],"ok":[false],"chunk":[8],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_g."]}
+,
+{"type":["hint"],"time":["2025-04-24 18:23:35"],"user":["Hannes Vohrer"],"umph":[1745511815.5169],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:23:39"],"user":["Hannes Vohrer"],"umph":[1745511819.9197],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:23:39"],"user":["Hannes Vohrer"],"umph":[1745511819.9404],"ok":[false],"chunk":[8],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\ncor(eu_makro$unempl, eu_makro$debt_share_country_pro)"],"message":["\nYou have not yet entered all correct commands in chunk 1_g."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:24:37"],"user":["Hannes Vohrer"],"umph":[1745511877.3721],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:24:37"],"user":["Hannes Vohrer"],"umph":[1745511877.4261],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncor(eu_makro$unempl, eu_makro$debt_share_country_pro, use = \"pairwise.complete.obs\")\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:24:37"],"user":["Hannes Vohrer"],"umph":[1745511877.5395],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["set.seed(1)\nT <-  20 # Zahl der Beobachtungen\nbeta0 <- 10; beta1 <- 2;\nu <- rnorm(T,0,3) # Normalverteilte Stoergroesse\nu\nx <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\nx\ny <- beta0 + beta1*x + u\ny"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:24:37"],"user":["Hannes Vohrer"],"umph":[1745511877.5658],"ok":[false],"chunk":[10],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:26:37"],"user":["Hannes Vohrer"],"umph":[1745511997.0953],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:26:37"],"user":["Hannes Vohrer"],"umph":[1745511997.1347],"ok":[false],"chunk":[10],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_2."]}
+,
+{"type":["hint"],"time":["2025-04-24 18:26:42"],"user":["Hannes Vohrer"],"umph":[1745512002.4052],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:26:49"],"user":["Hannes Vohrer"],"umph":[1745512009.7817],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:26:49"],"user":["Hannes Vohrer"],"umph":[1745512009.8025],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:26:49"],"user":["Hannes Vohrer"],"umph":[1745512009.8162],"ok":[false],"chunk":[11],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_3."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:27:16"],"user":["Hannes Vohrer"],"umph":[1745512036.592],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:27:16"],"user":["Hannes Vohrer"],"umph":[1745512036.6096],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nlm(y ~ x)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:27:16"],"user":["Hannes Vohrer"],"umph":[1745512036.6279],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["simulate.and.estimate <- function(T=20, beta0 = 10, beta1=2) {\n  u <- rnorm(T,0,3) # Normalverteilte Stoergroesse\n  x <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\n  y <- beta0 + beta1*x + u\n  # Anmerkung lm.fit lauft schneller als\n  # lm, hat aber keinen so schoenen Syntax\n  reg <- lm.fit(x=cbind(1,x),y=y)\n  coef(reg)[2]\n}\nsimulate.and.estimate()\nsimulate.and.estimate()\nsimulate.and.estimate()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:27:16"],"user":["Hannes Vohrer"],"umph":[1745512036.6438],"ok":[false],"chunk":[13],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_b_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:28:09"],"user":["Hannes Vohrer"],"umph":[1745512089.0718],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:28:09"],"user":["Hannes Vohrer"],"umph":[1745512089.1148],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:28:09"],"user":["Hannes Vohrer"],"umph":[1745512089.1424],"ok":[false],"chunk":[14],"ex":[2],"e.ind":[0],"code":[".PH_.__ <- .PH_.__(.PH_.__,simulate.and.estimate())\n\n# enter your code here ...\n"],"message":["evaluation error in \n  ____ <- ____(____, simulate.and.estimate())\n  Error in ____(____, simulate.and.estimate()): konnte Funktion \"____\" nicht finden\n"]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:28:53"],"user":["Hannes Vohrer"],"umph":[1745512133.9529],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:28:54"],"user":["Hannes Vohrer"],"umph":[1745512134.3925],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["sim.beta1 <- replicate(5000, simulate.and.estimate())\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:28:54"],"user":["Hannes Vohrer"],"umph":[1745512134.4438],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_c_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:29:11"],"user":["Hannes Vohrer"],"umph":[1745512151.2421],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:29:11"],"user":["Hannes Vohrer"],"umph":[1745512151.2882],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:29:11"],"user":["Hannes Vohrer"],"umph":[1745512151.4341],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["ggplot(mapping=aes(x=sim.beta1)) + geom_density(fill=\"blue\", alpha=0.5) + geom_vline(xintercept = 2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:29:11"],"user":["Hannes Vohrer"],"umph":[1745512151.4509],"ok":[false],"chunk":[17],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_d."]}
+,
+{"type":["hint"],"time":["2025-04-24 18:29:35"],"user":["Hannes Vohrer"],"umph":[1745512175.472],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:29:46"],"user":["Hannes Vohrer"],"umph":[1745512186.9331],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:29:46"],"user":["Hannes Vohrer"],"umph":[1745512186.9496],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nsd(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:29:46"],"user":["Hannes Vohrer"],"umph":[1745512186.9769],"ok":[false],"chunk":[18],"ex":[2],"e.ind":[2],"code":["reg1 <-  lm(y~x)\n\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_e."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:30:22"],"user":["Hannes Vohrer"],"umph":[1745512222.7958],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:30:22"],"user":["Hannes Vohrer"],"umph":[1745512222.8174],"ok":[true],"chunk":[18],"ex":[2],"e.ind":[0],"code":["reg1 <-  lm(y~x)\n\n# enter your code here ...\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:30:22"],"user":["Hannes Vohrer"],"umph":[1745512222.8348],"ok":[false],"chunk":[19],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_f."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:33:16"],"user":["Hannes Vohrer"],"umph":[1745512396.3206],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:33:16"],"user":["Hannes Vohrer"],"umph":[1745512396.3427],"ok":[true],"chunk":[19],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nconfint(reg1, level = 0.95)\n\n# enter your code here ...\nconfint(reg1, level = 0.99)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:33:17"],"user":["Hannes Vohrer"],"umph":[1745512397.9575],"ok":[true],"chunk":[20],"ex":[2],"e.ind":[0],"code":["ggplot(mapping = aes(x=x,y=y)) + geom_point()+ geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:33:18"],"user":["Hannes Vohrer"],"umph":[1745512398.1882],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:33:18"],"user":["Hannes Vohrer"],"umph":[1745512398.2312],"ok":[true],"chunk":[22],"ex":[3],"e.ind":[0],"code":["eu_makro <-  eu_makro |>\n  group_by(country) |>\n  arrange(year) |>\n  mutate(gdp_growth = 100*(gdp - lag(gdp)) / gdp ) |>\n  ungroup()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:33:18"],"user":["Hannes Vohrer"],"umph":[1745512398.2479],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to dat in chunk 3_a_3."]}
+,
+{"type":["hint"],"time":["2025-04-24 18:37:39"],"user":["Hannes Vohrer"],"umph":[1745512659.9118],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:38:34"],"user":["Hannes Vohrer"],"umph":[1745512714.5884],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:38:34"],"user":["Hannes Vohrer"],"umph":[1745512714.6107],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\ndat <- eu_makro |>\n  filter(country %in% c(\"Germany\", \"France\", \"Netherlands\"))\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:38:34"],"user":["Hannes Vohrer"],"umph":[1745512714.6287],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:39:33"],"user":["Hannes Vohrer"],"umph":[1745512773.4727],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:39:33"],"user":["Hannes Vohrer"],"umph":[1745512773.4954],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(unempl ~ gdp_growth, data = dat)\n\n# enter your code here ...\nsummary(reg1)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:39:33"],"user":["Hannes Vohrer"],"umph":[1745512773.5082],"ok":[false],"chunk":[25],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_a_5."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:41:09"],"user":["Hannes Vohrer"],"umph":[1745512869.7644],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:41:09"],"user":["Hannes Vohrer"],"umph":[1745512869.7949],"ok":[true],"chunk":[25],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:41:09"],"user":["Hannes Vohrer"],"umph":[1745512869.8086],"ok":[false],"chunk":[26],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:43:01"],"user":["Hannes Vohrer"],"umph":[1745512981.1537],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:43:01"],"user":["Hannes Vohrer"],"umph":[1745512981.184],"ok":[false],"chunk":[26],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:43:10"],"user":["Hannes Vohrer"],"umph":[1745512990.0445],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:43:10"],"user":["Hannes Vohrer"],"umph":[1745512990.0855],"ok":[false],"chunk":[26],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n2"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:43:13"],"user":["Hannes Vohrer"],"umph":[1745512993.1584],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:43:13"],"user":["Hannes Vohrer"],"umph":[1745512993.1773],"ok":[false],"chunk":[26],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n2"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:43:19"],"user":["Hannes Vohrer"],"umph":[1745512999.0568],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:43:19"],"user":["Hannes Vohrer"],"umph":[1745512999.0724],"ok":[true],"chunk":[26],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:43:19"],"user":["Hannes Vohrer"],"umph":[1745512999.089],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_b_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:43:52"],"user":["Hannes Vohrer"],"umph":[1745513032.1472],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:43:52"],"user":["Hannes Vohrer"],"umph":[1745513032.1645],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n4"],"message":["\nOk, in chunk 3_b_2 your command\n\n    4\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'c'."]}
+,
+{"type":["hint"],"time":["2025-04-24 18:44:07"],"user":["Hannes Vohrer"],"umph":[1745513047.8075],"ok":[true],"chunk":[27],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:44:29"],"user":["Hannes Vohrer"],"umph":[1745513069.142],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:44:29"],"user":["Hannes Vohrer"],"umph":[1745513069.1587],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nc(1,2,3)"],"message":["\nYou have not yet entered all correct commands in chunk 3_b_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:44:45"],"user":["Hannes Vohrer"],"umph":[1745513085.5349],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:44:45"],"user":["Hannes Vohrer"],"umph":[1745513085.5546],"ok":[true],"chunk":[27],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nc(4)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:44:45"],"user":["Hannes Vohrer"],"umph":[1745513085.7604],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[0],"code":["reg2 <- lm(unempl~gdp_growth, data=eu_makro)\nstargazer(type = \"text\", reg2 ,  single.row = TRUE, header = FALSE, digits=2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:44:45"],"user":["Hannes Vohrer"],"umph":[1745513085.7708],"ok":[false],"chunk":[29],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_c_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:48:48"],"user":["Hannes Vohrer"],"umph":[1745513328.4683],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:48:48"],"user":["Hannes Vohrer"],"umph":[1745513328.4914],"ok":[false],"chunk":[29],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n4"],"message":["\nYou have not yet entered all correct commands in chunk 3_c_2."]}
+,
+{"type":["hint"],"time":["2025-04-24 18:49:25"],"user":["Hannes Vohrer"],"umph":[1745513365.2181],"ok":[true],"chunk":[29],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:49:49"],"user":["Hannes Vohrer"],"umph":[1745513389.7435],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:49:49"],"user":["Hannes Vohrer"],"umph":[1745513389.773],"ok":[false],"chunk":[29],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nc(4)"],"message":["\nYou have not yet entered all correct commands in chunk 3_c_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:50:00"],"user":["Hannes Vohrer"],"umph":[1745513400.4862],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:50:00"],"user":["Hannes Vohrer"],"umph":[1745513400.5095],"ok":[false],"chunk":[29],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nc(2,3,4)"],"message":["\nYou have not yet entered all correct commands in chunk 3_c_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:51:46"],"user":["Hannes Vohrer"],"umph":[1745513506.1306],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:51:46"],"user":["Hannes Vohrer"],"umph":[1745513506.1585],"ok":[true],"chunk":[29],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:51:46"],"user":["Hannes Vohrer"],"umph":[1745513506.1836],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_d."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:53:32"],"user":["Hannes Vohrer"],"umph":[1745513612.1907],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:53:32"],"user":["Hannes Vohrer"],"umph":[1745513612.2336],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n2"],"message":["\nYou have not yet entered all correct commands in chunk 3_d."]}
+,
+{"type":["hint"],"time":["2025-04-24 18:53:35"],"user":["Hannes Vohrer"],"umph":[1745513615.438],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:53:53"],"user":["Hannes Vohrer"],"umph":[1745513633.8438],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:53:53"],"user":["Hannes Vohrer"],"umph":[1745513633.8605],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 3_d."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:54:06"],"user":["Hannes Vohrer"],"umph":[1745513646.8018],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:54:06"],"user":["Hannes Vohrer"],"umph":[1745513646.823],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n3"],"message":["\nYou have not yet entered all correct commands in chunk 3_d."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:54:11"],"user":["Hannes Vohrer"],"umph":[1745513651.351],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:54:11"],"user":["Hannes Vohrer"],"umph":[1745513651.3728],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n4"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:54:11"],"user":["Hannes Vohrer"],"umph":[1745513651.4741],"ok":[true],"chunk":[31],"ex":[4],"e.ind":[0],"code":["pwt <- readRDS(\"./data/pwt_2019.rds\")\nhead(pwt)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:54:11"],"user":["Hannes Vohrer"],"umph":[1745513651.4927],"ok":[false],"chunk":[32],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg1 in chunk 4_b."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:55:41"],"user":["Hannes Vohrer"],"umph":[1745513741.9621],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:55:42"],"user":["Hannes Vohrer"],"umph":[1745513742.0061],"ok":[true],"chunk":[32],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(bip~k, data = pwt)\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:55:42"],"user":["Hannes Vohrer"],"umph":[1745513742.0215],"ok":[false],"chunk":[33],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 4_b_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:57:43"],"user":["Hannes Vohrer"],"umph":[1745513863.4565],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:57:43"],"user":["Hannes Vohrer"],"umph":[1745513863.4773],"ok":[false],"chunk":[33],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 4_b_2."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:57:48"],"user":["Hannes Vohrer"],"umph":[1745513868.083],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:57:48"],"user":["Hannes Vohrer"],"umph":[1745513868.1274],"ok":[true],"chunk":[33],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:57:48"],"user":["Hannes Vohrer"],"umph":[1745513868.4791],"ok":[true],"chunk":[34],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=k,y=bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:57:48"],"user":["Hannes Vohrer"],"umph":[1745513868.4981],"ok":[false],"chunk":[35],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to pwt in chunk 4_d."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 18:58:07"],"user":["Hannes Vohrer"],"umph":[1745513887.1382],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 18:58:07"],"user":["Hannes Vohrer"],"umph":[1745513887.1569],"ok":[false],"chunk":[35],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to pwt in chunk 4_d."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 19:00:25"],"user":["Hannes Vohrer"],"umph":[1745514025.3752],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:00:25"],"user":["Hannes Vohrer"],"umph":[1745514025.3976],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\npwt <- pwt |>\n  mutate(log_bip = log(bip), log_k = log(k))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:00:25"],"user":["Hannes Vohrer"],"umph":[1745514025.738],"ok":[true],"chunk":[36],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=log_k,y=log_bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:00:25"],"user":["Hannes Vohrer"],"umph":[1745514025.7655],"ok":[false],"chunk":[37],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg2 in chunk 4_e."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 19:00:33"],"user":["Hannes Vohrer"],"umph":[1745514033.2337],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:00:33"],"user":["Hannes Vohrer"],"umph":[1745514033.2521],"ok":[false],"chunk":[37],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg2 in chunk 4_e."]}
+,
+{"type":["check_ps"],"time":["2025-04-24 19:03:57"],"user":["Hannes Vohrer"],"umph":[1745514237.8739],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:03:57"],"user":["Hannes Vohrer"],"umph":[1745514237.9012],"ok":[true],"chunk":[37],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg2 <- lm(log_bip~log_k, data = pwt)\nsummary(reg2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:03:57"],"user":["Hannes Vohrer"],"umph":[1745514237.9288],"ok":[true],"chunk":[38],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_ps"],"time":["2025-04-24 19:04:32"],"user":["Hannes Vohrer"],"umph":[1745514272.3669],"ok":[true]}
+,
+{"type":["grade_ps"],"time":["2025-04-24 19:04:46"],"user":["Hannes Vohrer"],"umph":[1745514286.663],"ok":[true]}
+,
+{"type":["init_ps"],"time":["2025-04-24 19:04:46"],"user":["Hannes Vohrer"],"umph":[1745514286.6837],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:46"],"user":["Hannes Vohrer"],"umph":[1745514286.697],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(stargazer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:46"],"user":["Hannes Vohrer"],"umph":[1745514286.9924],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["eu_makro <- read_csv(\"data/EU_Makro.csv\")\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:47"],"user":["Hannes Vohrer"],"umph":[1745514287.4869],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["eu_makro <- eu_makro |>\n  mutate( debt_share_country_pro = debt_share_country * 100)\n  \ng1 <- eu_makro |>\n  ggplot(aes(x = debt_share_country_pro, y = unempl)) + geom_point() + \n  xlab(\"Verschuldungsquote in %\") +\n  ylab(\"Arbeitslosenquote in %\")\ng1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:47"],"user":["Hannes Vohrer"],"umph":[1745514287.5097],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["# enter your code here ...\nreg1 <- lm(unempl~debt_share_country_pro, data=eu_makro)\n\n# enter your code here ...\nsummary(reg1)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:47"],"user":["Hannes Vohrer"],"umph":[1745514287.5289],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n6.411"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:47"],"user":["Hannes Vohrer"],"umph":[1745514287.5583],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncoef(reg1)\n\n# enter your code here ...\nb0 <- coef(reg1)[1]\nb1 <- coef(reg1)[2]\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:47"],"user":["Hannes Vohrer"],"umph":[1745514287.9049],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["g2 <- g1 + geom_abline(intercept=b0,slope=b1,colour=\"blue\")\n\n# enter your code here ...\n\ng2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:47"],"user":["Hannes Vohrer"],"umph":[1745514287.9403],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncor(eu_makro$unempl, eu_makro$debt_share_country_pro, use = \"pairwise.complete.obs\")\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.0213],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["set.seed(1)\nT <-  20 # Zahl der Beobachtungen\nbeta0 <- 10; beta1 <- 2;\nu <- rnorm(T,0,3) # Normalverteilte Stoergroesse\nu\nx <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\nx\ny <- beta0 + beta1*x + u\ny"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.0355],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.0521],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nlm(y ~ x)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.0667],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["simulate.and.estimate <- function(T=20, beta0 = 10, beta1=2) {\n  u <- rnorm(T,0,3) # Normalverteilte Stoergroesse\n  x <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\n  y <- beta0 + beta1*x + u\n  # Anmerkung lm.fit lauft schneller als\n  # lm, hat aber keinen so schoenen Syntax\n  reg <- lm.fit(x=cbind(1,x),y=y)\n  coef(reg)[2]\n}\nsimulate.and.estimate()\nsimulate.and.estimate()\nsimulate.and.estimate()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.0801],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.7271],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["sim.beta1 <- replicate(5000, simulate.and.estimate())\n\n# enter your code here ...\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.7649],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.8946],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["ggplot(mapping=aes(x=sim.beta1)) + geom_density(fill=\"blue\", alpha=0.5) + geom_vline(xintercept = 2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.9052],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nsd(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.9258],"ok":[true],"chunk":[18],"ex":[2],"e.ind":[0],"code":["reg1 <-  lm(y~x)\n\n# enter your code here ...\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:48"],"user":["Hannes Vohrer"],"umph":[1745514288.9457],"ok":[true],"chunk":[19],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nconfint(reg1, level = 0.95)\n\n# enter your code here ...\nconfint(reg1, level = 0.99)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.1333],"ok":[true],"chunk":[20],"ex":[2],"e.ind":[0],"code":["ggplot(mapping = aes(x=x,y=y)) + geom_point()+ geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.4917],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.542],"ok":[true],"chunk":[22],"ex":[3],"e.ind":[0],"code":["eu_makro <-  eu_makro |>\n  group_by(country) |>\n  arrange(year) |>\n  mutate(gdp_growth = 100*(gdp - lag(gdp)) / gdp ) |>\n  ungroup()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.5607],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\ndat <- eu_makro |>\n  filter(country %in% c(\"Germany\", \"France\", \"Netherlands\"))\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.5863],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(unempl ~ gdp_growth, data = dat)\n\n# enter your code here ...\nsummary(reg1)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.6197],"ok":[true],"chunk":[25],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.633],"ok":[true],"chunk":[26],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.6449],"ok":[true],"chunk":[27],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nc(4)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.8804],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[0],"code":["reg2 <- lm(unempl~gdp_growth, data=eu_makro)\nstargazer(type = \"text\", reg2 ,  single.row = TRUE, header = FALSE, digits=2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.9072],"ok":[true],"chunk":[29],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:49"],"user":["Hannes Vohrer"],"umph":[1745514289.936],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n4"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:50"],"user":["Hannes Vohrer"],"umph":[1745514290.0002],"ok":[true],"chunk":[31],"ex":[4],"e.ind":[0],"code":["pwt <- readRDS(\"./data/pwt_2019.rds\")\nhead(pwt)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:50"],"user":["Hannes Vohrer"],"umph":[1745514290.0343],"ok":[true],"chunk":[32],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(bip~k, data = pwt)\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:50"],"user":["Hannes Vohrer"],"umph":[1745514290.0538],"ok":[true],"chunk":[33],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:50"],"user":["Hannes Vohrer"],"umph":[1745514290.3639],"ok":[true],"chunk":[34],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=k,y=bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:50"],"user":["Hannes Vohrer"],"umph":[1745514290.3927],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\npwt <- pwt |>\n  mutate(log_bip = log(bip), log_k = log(k))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:50"],"user":["Hannes Vohrer"],"umph":[1745514290.8665],"ok":[true],"chunk":[36],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=log_k,y=log_bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:50"],"user":["Hannes Vohrer"],"umph":[1745514290.9154],"ok":[true],"chunk":[37],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg2 <- lm(log_bip~log_k, data = pwt)\nsummary(reg2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2025-04-24 19:04:50"],"user":["Hannes Vohrer"],"umph":[1745514290.95],"ok":[true],"chunk":[38],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
